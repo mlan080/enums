@@ -17,7 +17,8 @@ class AnyPatternTest < Minitest::Test
     numbers = [3, 1, 3, 2, 4, 9, 8]
     has_zero = false
     numbers.each do |number|
-      # Your code goes here
+     # has_zero = true if number.zero?
+      has_zero = number.any?
     end
     refute has_zero
   end
